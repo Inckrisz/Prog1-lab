@@ -1,13 +1,5 @@
-#include <stdio.h>
-
-int main()
+int main(int argc, char const *argv[])
 {
-    int a;
-    printf("Írj be egy számot: ");
-    scanf("%d", &a);
-
-    for (int i = 0; i < a; ++i)
-    {
-        printf("Nev: Sára\n");
-    }
+    /* code */
+    return 0;
 }
