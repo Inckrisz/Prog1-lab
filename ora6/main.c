@@ -13,10 +13,11 @@ void line (char c, int n)
 
 void feltolt (int n, char tomb[])
 {
-    for (int i = 0; i < n; ++i)
+    for (char c = 'a'; c <= 'z'; ++c)
     {
-        tomb[i] = (char)((int)'a' + i);
+        tomb[c-'a'] = c;
     }
+    // tomb[SIZE] = '\0';
 }
 
 int main(int argc, char const *argv[])
@@ -27,12 +28,14 @@ int main(int argc, char const *argv[])
     // printf("hello\n");
     // line('*', 20);
     // printf("world");
-    char abece[SIZE];
+    // string vmi = "ajsdjaw";
+    char abece[SIZE+1];
     feltolt(SIZE, abece);
-    for (int i = 0; i < SIZE; ++i)
-    {
-        printf("%c, ", abece[i]);
-    }
+    // for (int i = 0; i < SIZE; ++i)
+    // {
+    //     printf("%c, ", abece[i]);
+    // }
+    printf("%s\n", abece);
 
 
     return 0;
